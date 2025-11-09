@@ -23,7 +23,7 @@ def multiply(a, b):
 
 def divide(a, b):
     if b == 0:
-        print("Error: Division by zero is not allowed.")
+        print("Error: Division by zero is undefined.")
         return None
     return a / b
 
