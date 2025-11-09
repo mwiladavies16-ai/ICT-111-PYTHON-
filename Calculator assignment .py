@@ -1,5 +1,5 @@
 # ---------- Lab 1: Python Calculator (Extended Version) ----------
-# Author: [Your Name]
+# Group Name: [Group G 2nd List Students]
 # Course: ICT111 - Python Programming
 # ---------------------------------------------------------------
 
