@@ -24,7 +24,7 @@ def multiply(a, b):
 
 def divide(a, b):
     if b == 0:
-        print("Error: Division by zero is undefined.")
+        print("Error: math error.")
         return None
     return a / b
 
