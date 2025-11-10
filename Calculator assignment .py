@@ -12,10 +12,10 @@ last_result = None  # to store the last calculated result
 
 
 # ---------------- BASIC ARITHMETIC FUNCTIONS ----------------
-def add(a, b):
+def sum(a, b):
     return a + b
 
-def subtract(a, b):
+def difference (a, b):
     return a - b
 
 def multiply(a, b):
@@ -76,12 +76,12 @@ def clear_history():
 
 
 # ---------------- MEMORY FUNCTIONS ----------------
-def memory_add(value):
+def memory_sum(value):
     global memory
     memory += value
     print(f"Memory updated. M = {memory}")
 
-def memory_subtract(value):
+def memory_difference (value):
     global memory
     memory -= value
     print(f"Memory updated. M = {memory}")
@@ -103,8 +103,8 @@ def main():
 
     while True:
         print("\nSelect operation:")
-        print("1. Add (+)")
-        print("2. Subtract (-)")
+        print("1. sum  (+)")
+        print("2. difference (-)")
         print("3. Multiply (*)")
         print("4. Divide (/)")
         print("5. Modulus (%)")
@@ -112,7 +112,7 @@ def main():
         print("7. Square Root (√)")
         print("8. Show History")
         print("9. Clear History")
-        print("10. Memory Add (M+)")
+        print("10. Memory sum (M+)")
         print("11. Memory Subtract (M-)")
         print("12. Memory Recall (MR)")
         print("13. Memory Clear (MC)")
@@ -134,12 +134,12 @@ def main():
                 if last_result is not None:
                     memory_add(last_result)
                 else:
-                    print("No result in memory to add.")
+                    print("No result in memory to sum.")
             elif choice == '11':
                 if last_result is not None:
-                    memory_subtract(last_result)
+                    memory_difference(last_result)
                 else:
-                    print("No result in memory to subtract.")
+                    print("No result in memory to difference.")
             elif choice == '12':
                 memory_recall()
             elif choice == '13':
@@ -164,10 +164,10 @@ def main():
         num2 = get_number_input("Enter second number: ")
 
         if choice == '1':
-            result = add(num1, num2)
+            result = sum(num1, num2)
             operation = '+'
         elif choice == '2':
-            result = subtract(num1, num2)
+            result = difference (num1, num2)
             operation = '-'
         elif choice == '3':
             result = multiply(num1, num2)
