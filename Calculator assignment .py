@@ -121,7 +121,7 @@ def main():
         choice = input("Enter choice (1-14): ")
 
         if choice == '14':
-            print("Goodbye!")
+            print("Goodbye!thanks for your cooperation")
             break
         elif choice == '8':
             display_history()
