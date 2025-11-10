@@ -44,7 +44,8 @@ def square_root(a):
 
 
 # ---------------- INPUT HANDLING FUNCTION ----------------
-def get_number_input(prompt):
+def getNumberI
+.bnput(prompt):
     while True:
         try:
             value = float(input(prompt))
