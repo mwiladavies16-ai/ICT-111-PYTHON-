@@ -1,4 +1,4 @@
-# ---------- Lab 1: Python Calculator (Extended Version) ----------
+# ---------- Lab one(1): Python Calculator (Extended Version) ----------
 # Group Name: [Group G 2nd List Students]
 # Course: ICT111 - Python Programming
 # ---------------------------------------------------------------
