@@ -29,7 +29,7 @@ def divide(a, b):
 
 def modulus(a, b):
     if b == 0:
-        print("Error: Division by zero is not allowed.")
+        print("Error: Division by zero should be math error.")
         return None
     return a % b
 
