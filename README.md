@@ -122,7 +122,7 @@ def main():
         choice = input("Enter choice (1-14): ")
 
         if choice == '14':
-            print("dont ever come back again")
+            print("thank you for using this python calculator")
             break
         elif choice == '8':
             display_history()
@@ -190,7 +190,6 @@ def main():
             print(f"Result: {result}")
             update_history(num1, operation, num2, result)
             last_result = result
-
 
 # ---------------- PROGRAM EXECUTION ----------------
 if __name__ == "__main__":
