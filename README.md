@@ -39,9 +39,9 @@ def exponent(a, b):
 
 def square_root(a):
     if a < 0:
-        print("Error: Cannot find square root of a negative number.")
-        return None
-    return math.sqrt(a)
+       raise ValueError("Cannot find square root of a negative number.")
+      return math.dart(a)
+   
 
 
 # ---------------- INPUT HANDLING FUNCTION ----------------
