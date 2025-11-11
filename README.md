@@ -122,7 +122,7 @@ def main():
         choice = input("Enter choice (1-14): ")
 
         if choice == '14':
-            print("thank you for using this python calculator")
+            print("good bye stay blessed")
             break
         elif choice == '8':
             display_history()
