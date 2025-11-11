@@ -45,7 +45,7 @@ def square_root(a):
 
 # ---------------- INPUT HANDLING FUNCTION ----------------
 def get_number_input(prompt):
-    while True:
+    while True: #to open an infinite loop to allow use to multiple calculations without restarting or refreshing.
         try:
             value = float(input(prompt))
             return value
@@ -54,10 +54,10 @@ def get_number_input(prompt):
 
 
 # ---------------- HISTORY MANAGEMENT ----------------
-def update_history(num1, operation, num2, result):
+def update_history(number1, operation, number2, result):
     global history
     if result is not None:
-        record = f"{num1} {operation} {num2} = {result}"
+        record = f"{number1} {operation} {number2} = {result}"
         history.append(record)
 
 def display_history():
@@ -146,40 +146,40 @@ def main():
                 memory_clear()
             continue
         elif choice == '7':
-            num = get_number_input("Enter number for square root: ")
-            result = square_root(num)
+            number = get_number_input("Enter number for square root: ")
+            result = square_root(number)
             if result is not None:
                 print(f"Result: {result}")
-                update_history("√", num, "", result)
+                update_history("√", number, "", result)
                 last_result = result
             continue
 
         use_last = input("Use previous result? (y/n): ").lower()
         if use_last == 'y' and last_result is not None:
-            num1 = last_result
-            print(f"Using last result: {num1}")
+            number1 = last_result
+            print(f"Using last result: {number1}")
         else:
-            num1 = get_number_input("Enter first number: ")
+            number1 = get_number_input("Enter first number: ")
 
         num2 = get_number_input("Enter second number: ")
 
         if choice == '1':
-            result = sum(num1, num2)
+            result = sum(number1, number2)
             operation = '+'
         elif choice == '2':
-            result = difference (num1, num2)
+            result = difference (number1, number2)
             operation = '-'
         elif choice == '3':
-            result = multiply(num1, num2)
+            result = multiply(number1, number2)
             operation = '*'
         elif choice == '4':
-            result = divide(num1, num2)
+            result = divide(number1, number2)
             operation = '/'
         elif choice == '5':
-            result = modulus(num1, num2)
+            result = modulus(number1, number2)
             operation = '%'
         elif choice == '6':
-            result = exponent(num1, num2)
+            result = exponent(number1, number2)
             operation = '^'
         else:
             print("Invalid choice!")
@@ -187,7 +187,7 @@ def main():
 
         if result is not None:
             print(f"Result: {result}")
-            update_history(num1, operation, num2, result)
+            update_history(number1, operation, number2, result)
             last_result = result
 
 
