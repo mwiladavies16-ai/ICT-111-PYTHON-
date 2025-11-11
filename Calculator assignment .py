@@ -45,7 +45,7 @@ def square_root(a):
 
 # ---------------- INPUT HANDLING FUNCTION ----------------
 def get_number_input(prompt):
-    while True: #to open an infinite loop to allow use to multiple calculations without restarting or refreshing.
+    while True: #to open an infinite loop to allow user to perform multiple calculations without restarting or refreshing.
         try:
             value = float(input(prompt))
             return value
